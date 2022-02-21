@@ -24,7 +24,7 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry("", "prashanthsukkal"){
-                        def image = docker.build("prashanthsukkal/testing")
+                        def image = docker.build("prashanthsukkal/scriptexecution")
                         image.push("latest")
                     }
                     
